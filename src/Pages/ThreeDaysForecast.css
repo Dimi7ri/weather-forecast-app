@@ -1,0 +1,77 @@
+body {
+  height: 100%;
+  width: 100%;
+  background: #f9f8f8;
+}
+.Three-days-forecast {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: auto;
+}
+.Three-days-forecast .Inputs-forecast {
+  display: inline-flex;
+  margin-bottom: 20px;
+}
+.Three-days-forecast .Input-text input{
+  border: 1px solid #e7e7e7;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 20px;
+	-moz-box-shadow: 2px 2px 2px #777;
+	-webkit-box-shadow: 2px 2px 2px #777;
+	box-shadow: 2px 2px 2px #777;
+	font-size: 24px;
+	padding: 5px 8px;
+	outline: 0;
+  margin: auto;
+  text-align: center;
+}
+.Three-days-forecast .Input-text input:focus {
+	border-color: #ccc;
+}
+.Three-days-forecast .Input-button input{
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #ebebeb;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 20px;
+  -moz-box-shadow: 2px 2px 2px #777;
+	-webkit-box-shadow: 2px 2px 2px #777;
+	box-shadow: 2px 2px 2px #777;
+	font-size: 24px;
+	padding: 5px 8px;
+  outline: 0;
+  margin-left: 10px;
+}
+.Three-days-forecast .Input-button input:hover {
+  background-color: #e7e7e7;
+}
+.Three-days-forecast .Error-message {
+  padding: 10px;
+  font-size: 20px;
+}
+.Three-days-forecast .App-error {
+  padding: 10px;
+  font-size: 20px;
+}
+.Three-days-forecast .Weather .Location {
+  padding: 5px;
+  font-size: 24px;
+}
+.Three-days-forecast .Weather .Forecast-day {
+  padding: 5px;
+  font-size: 18px;
+}
+.Three-days-forecast .Weather .Forecast-day .Title {
+  padding: 3px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.Three-days-forecast .Weather .Forecast-day .Min {
+  color: blue
+}
+.Three-days-forecast .Weather .Forecast-day .Max {
+  color: red
+}
