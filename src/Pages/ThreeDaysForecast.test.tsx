@@ -15,6 +15,6 @@ describe('Three Days Forecast Page', () => {
     expect(inputButton.type).toBe('button');
 
     const weatherId = queryByTestId('weather');
-    expect(weatherId).toBeNull;
+    expect(weatherId).toBe(null);
   });
 });

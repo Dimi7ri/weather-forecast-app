@@ -1,7 +1,7 @@
 body {
   height: 100%;
   width: 100%;
-  background: #f9f8f8;
+  background: #ebebeb;
 }
 .Three-days-forecast {
   text-align: center;
@@ -11,10 +11,10 @@ body {
 }
 .Three-days-forecast .Inputs-forecast {
   display: inline-flex;
-  margin-bottom: 20px;
 }
 .Three-days-forecast .Input-text input{
   border: 1px solid #e7e7e7;
+  background-color: #f9f8f8;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 20px;
@@ -29,11 +29,12 @@ body {
 }
 .Three-days-forecast .Input-text input:focus {
 	border-color: #ccc;
+  background-color: #e7e7e7;
 }
 .Three-days-forecast .Input-button input{
   cursor: pointer;
   border: 1px solid #ccc;
-  background-color: #ebebeb;
+  background-color: #f9f8f8;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 20px;
@@ -56,6 +57,23 @@ body {
   padding: 10px;
   font-size: 20px;
 }
+.Three-days-forecast .Weather {
+  border: 1px solid #e7e7e7;
+  background-color: #f9f8f8;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 20px;
+	-moz-box-shadow: 2px 2px 2px #777;
+	-webkit-box-shadow: 2px 2px 2px #777;
+	box-shadow: 2px 2px 2px #777;
+	font-size: 24px;
+	padding: 5px 8px;
+	outline: 0;
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 20px;
+}
 .Three-days-forecast .Weather .Location {
   padding: 5px;
   font-size: 24px;
@@ -74,4 +92,10 @@ body {
 }
 .Three-days-forecast .Weather .Forecast-day .Max {
   color: red
+}
+@media only screen and (max-width: 600px) {
+  .Three-days-forecast .Weather {
+    margin: 10px;
+    min-width: 375px;
+  }
 }
