@@ -32,7 +32,7 @@ export interface WeatherApiForecastDay {
 export const ForecastDay = (props: WeatherApiForecastDay) => {
   const { day, date } = props;
   const { mintemp_c, maxtemp_c, condition, avghumidity, maxwind_kph, totalprecip_mm } = day;
-  const formattedDate = format(new Date(date), 'iii i MMM');
+  const formattedDate = format(new Date(date), 'EEE d MMM');
   return (
     <div className='Forecast-day' data-testid='forecast-day'>
       <div className='Title'>{formattedDate} - {condition.text}</div>
